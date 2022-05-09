@@ -1,9 +1,9 @@
 @extends('dashboard.app')
 
-@section('title', 'Categorias')
+@section('title', 'Resultado de busqueda')
 
 @section('content_header')
-<h1>Categorias</h1>
+    <h1>Resultado de busqueda</h1>
 @stop
 
 @section('content')
@@ -15,21 +15,10 @@
                     <div style="display: flex; justify-content: space-between; align-items: center;">
 
                         <span id="card_title">
-                            {{ __('Categorias') }}
+                            {{ __('Resultado de busqueda') }}
                         </span>
-
-                        <div class="float-right">
-                            <a href="{{ route('categories.create') }}" class="btn btn-primary btn-sm float-right" data-placement="left">
-                                {{ __('Crear nueva') }}
-                            </a>
-                        </div>
                     </div>
                 </div>
-                @if ($message = Session::get('success'))
-                <div class="alert alert-success">
-                    <p>{{ $message }}</p>
-                </div>
-                @endif
 
                 <div class="card-body">
                     <div class="table-responsive">

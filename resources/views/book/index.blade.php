@@ -68,8 +68,10 @@
                         </table>
                     </div>
                 </div>
+                <div class="pagination-block card-footer">
+                    {{ $books->appends(request()->input())->links('dashboard.paginationlinks') }}
+                </div>
             </div>
-            {!! $books->links() !!}
         </div>
     </div>
 </div>

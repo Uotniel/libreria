@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/search', 'App\Http\Controllers\SearchController@searchInEverything');
 Route::get('/home', 'App\Http\Controllers\DashboardController@index');
 Route::resource('libros',App\Http\Controllers\BookController::class)->names('books')->middleware('auth');
 Route::resource('categorias',App\Http\Controllers\CategoryController::class)->names('categories')->middleware('auth');

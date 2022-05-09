@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Librería</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -229,7 +229,9 @@ return [
         [
             'type'         => 'navbar-search',
             'text'         => 'search',
+            'url'  => '/search',
             'topnav_right' => true,
+
         ],
         [
             'type'         => 'fullscreen-widget',
@@ -240,6 +242,7 @@ return [
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
+            'url'  => '/search'
         ],
         [
             'text' => 'blog',
